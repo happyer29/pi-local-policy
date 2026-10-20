@@ -1,0 +1,24 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Ensure ripgrep prerequisite
+        run: command -v rg >/dev/null || brew install ripgrep
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check:release
+      - run: npm test
+      - run: npm run test:sandbox
+      - run: npm run check:package

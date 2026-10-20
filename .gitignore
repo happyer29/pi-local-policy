@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+coverage/
+*.log
+*.tgz
+.env
+.env.*
+!.env.example
+config.local.json
+auth.json
+credentials.json
+secrets.json
+.pi/
+backups/
+sessions/
+work/
