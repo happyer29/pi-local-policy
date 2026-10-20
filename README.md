@@ -1,5 +1,7 @@
 # Pi Local Policy
 
+[![npm version](https://img.shields.io/npm/v/pi-local-policy)](https://www.npmjs.com/package/pi-local-policy)
+
 [English](README.md) | [Русский](docs/i18n/ru/README.md) | [简体中文](docs/i18n/zh-CN/README.md)
 
 Local access rules for [Pi Coding Agent](https://pi.dev/): routine work inside a project runs automatically, selected external actions require approval, and unknown tools are blocked.

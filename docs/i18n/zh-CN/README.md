@@ -1,5 +1,7 @@
 # Pi Local Policy
 
+[![npm 版本](https://img.shields.io/npm/v/pi-local-policy)](https://www.npmjs.com/package/pi-local-policy)
+
 [English](../../../README.md) | [Русский](../ru/README.md) | **简体中文**
 
 为 [Pi Coding Agent](https://pi.dev/) 提供本地访问规则：项目内的日常工作自动执行，部分外部操作需要确认，未知工具则被阻止。
